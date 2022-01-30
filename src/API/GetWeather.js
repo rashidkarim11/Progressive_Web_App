@@ -11,7 +11,7 @@ export const getWeather = async (query) => {
         APPID: API_KEY,
       },
     });
-    return response;
+    return response.data;
   } catch (error) {
     return error;
   }
